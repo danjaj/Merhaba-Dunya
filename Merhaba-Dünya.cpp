@@ -2,8 +2,10 @@
 using namespace std;
 
 int main() {
+		// 1. Merhaba Dünya
+		// Ekrana Merhaba Dünya yazan kodu yazınız.
 
-	cout << "Merhaba D�nya!";
+	cout << "Merhaba Dünya!";
 
 	return 0;
 }
