@@ -5,7 +5,7 @@ int main() {
 		// 1. Merhaba Dünya
 		// Ekrana Merhaba Dünya yazan kodu yazınız.
 
-	cout << "Merhaba Dünya!";
+	cout << "Merhaba Dünya! BENİM";
 
 	return 0;
 }
