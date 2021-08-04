@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	char islemTipi;
+	int sayi1, sayi2, toplam;
+	cout << "İslem Seciniz:";
+	cout << "Toplama: 'T' Cikartma: 'C' Bölme: 'B' Carpma: 'X'"<<endl;
+	cin >> islemTipi;
+	cout << endl << "Sayi 1:";
+	cin >> sayi1;
+	cout  << "Sayi 2:";
+	cin >> sayi2;
+
+	cout <<endl<<endl<< "****** ANSWER ******"<<endl;
+	switch (islemTipi)
+	{
+	case 'T':
+		cout << sayi1 + sayi2;
+		break;
+	case 'C':
+		cout << sayi1 - sayi2;
+		break;
+	case 'B':
+		cout << sayi1 / sayi2;
+		break;
+	case 'X':
+		cout << sayi1 * sayi2;
+		break;
+	default:
+		break;
+	}
+
+	cout << endl << endl << endl;
+
+
+
+
+	return 0;
+}
