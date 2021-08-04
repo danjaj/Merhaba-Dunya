@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	int a, b, c;
+	int aEsitlik=0, bEsitlik=0, cEsitlik=0;
+	cout << endl << "a:";
+	cin >> a;
+	cout  << "b:";
+	cin >> b;
+	cout << "c:";
+	cin >> c;
+
+	cout <<endl<<endl<< "****** ANSWER ******"<<endl;
+
+
+	// Eşitlikleri Test Ediyoruz
+	if (a == b)
+	{
+		aEsitlik++;
+		bEsitlik++;
+	}
+	if (a == c)
+	{
+		aEsitlik++;
+		cEsitlik++;
+	}
+	if ((aEsitlik == 1 & bEsitlik == 1 & cEsitlik == 0))
+		cout << "A ve B esittir";
+	else if (aEsitlik == 1 & cEsitlik == 1 & bEsitlik == 0)
+		cout << "A ve C esittir";
+	else if (aEsitlik == 1 & cEsitlik == 1 & bEsitlik == 1)
+		cout << "Tüm sayilar esittir";
+	else if (b == c)
+		cout << "B ve C esittir.";
+	else
+		cout << "Hicbiri esit degildir";
+
+
+	// En büyüğü tespit ediyoruz.
+	cout << endl;
+	if ((a > b) & (a > c))
+		cout << "a (" << a << ") en buyuktur.";
+	else if ((a >= b) & (a > c))
+		cout << "a (" << a << ") ve b ("<< b << ") en buyuktur.";
+	else if ((a > b) & (a >= c))
+		cout << "a (" << a << ") ve c (" << c << ") en buyuktur.";
+	else if ((a < b) & (a < c) & (b==c))
+		cout << "b (" << b << ") ve c (" << c << ") en buyuktur.";
+	else if((a < b) & (b > c))
+		cout << "b (" << b << ") en buyuktur.";
+	else 
+	cout << "c (" << c << ") en buyuktur.";
+	cout << endl << endl << endl;
+
+	return 0;
+}
