@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	int sayi1, sayi2, toplam;
+	cout << endl << "Sayi 1:";
+	cin >> sayi1;
+	cout  << "Sayi 2:";
+	cin >> sayi2;
+
+	cout <<endl<<endl<< "****** ANSWER ******"<<endl;
+	
+	if (sayi1 == sayi2)
+		cout << "Sayi1 ve Sayi2 esittir."<<endl;
+	else 
+		cout << "Sayi1 ve Sayi2 esit degildir." << endl;
+
+	if (sayi1 < sayi2)
+		cout << "Sayi1 kucuktur." << endl;
+	else if (sayi1 > sayi2)
+		cout << "Sayi2 kucuktur." << endl;
+
+	cout << endl << endl << endl;
+
+
+
+
+	return 0;
+}
